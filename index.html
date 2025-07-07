@@ -2,24 +2,151 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ramu Kizhakkey | Principal Architect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ramu Kizhakkey | Cloud Architect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; color:#333; }
-    header { background:#004080; color:#fff; padding:20px 0; text-align:center; }
-    nav a { margin:0 10px; color:#fff; text-decoration:none; }
-    section { padding:40px 20px; max-width:900px; margin:auto; }
-    .skills, .projects { display:flex; flex-wrap:wrap; gap:10px; }
-    .skills span, .projects div { background:#e0e0e0; padding:8px 12px; border-radius:4px; }
-    footer { background:#f4f4f4; padding:20px; text-align:center; font-size:0.9em; }
-    a { color:#004080; }
+    :root {
+      --primary: #1e3a8a;
+      --accent: #3b82f6;
+      --bg: #f9fafb;
+      --text: #1f2937;
+      --card: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 960px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: var(--primary);
+    }
+
+    .skills span {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 6px 6px 0 0;
+      font-size: 0.9rem;
+    }
+
+    .projects div {
+      margin-bottom: 15px;
+    }
+
+    .projects strong {
+      color: var(--primary);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    ul li a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px 5px;
+      }
+
+      section {
+        margin: 30px 10px;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
     <h1>Ramu Kizhakkey</h1>
-    <p>Principal Architect at JPMorgan Chase | AWS & Cloud Enterprise Architecture</p>
+    <p>Principal Architect @ JPMorgan | AWS | AI/ML | Enterprise Tech Leader</p>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -29,61 +156,62 @@
   </header>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>Cloud Computing and Enterprise Architect with 28+ years of experience spanning the healthcare and financial domains. Proven expertise in leading public cloud migration initiatives and architecting high-performing, scalable, resilient, and cost-efficient cloud solutions. Specialized in Artificial Intelligence and Machine Learning (AI/ML), Large Language Models (LLMs), and Agentic AI systems—driving innovation and transformative business outcomes through cutting-edge technology.</p>
-    <p>Currently serving as Principal Architect at JPMorgan Chase in Downingtown, PA . Co-inventor on granted patents for fraud prevention systems at JPMorgan </p>
+    <div class="card">
+      <h2>About Me</h2>
+      <p>I’m a Principal Architect at JPMorgan Chase with over 15 years of experience leading cloud architecture, enterprise modernization, and AI-driven platforms. I hold multiple patents in fraud detection and regularly contribute to open source and innovation programs. I enjoy turning complex tech challenges into elegant, scalable solutions.</p>
+    </div>
   </section>
 
   <section id="skills">
-    <h2>Skills & Certifications</h2>
-    <div class="skills">
-      <span>AWS & Cloud Architecture</span>
-      <span>Generative AI</span>
-      <span>Solution Design</span>
-      <span>AWS and Microsoft-Certified Developer</span>
+    <div class="card">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>AWS Architecture</span>
+        <span>.NET / C#</span>
+        <span>Enterprise Integration</span>
+        <span>AI/ML</span>
+        <span>Voice & Agentic AI</span>
+        <span>Patent Innovation</span>
+        <span>Open Source</span>
+      </div>
     </div>
   </section>
 
   <section id="projects">
-    <h2>Notable Projects</h2>
-    <div class="projects">
-      <div>
-        <strong>Enterprise Cloud Migration</strong><br>
-        Designed and executed large-scale AWS migrations during tenure at JPMorgan.
-      </div>
-      <div>
-        <strong>Alexa Skill – Top Rated Movies</strong><br>
-        Published Alexa Skill “Top Rated Movies” on Amazon by Ramu Kizhakkey .
-      </div>
-      <div>
-        <strong>Open‑Source Contributions</strong><br>
-        GitHub repos include Bootstrap3 fork, HelloWorld, and MLE projects .
+    <div class="card">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div>
+          <strong>Cloud Migration at Scale</strong><br>
+          Led enterprise cloud transformations across financial platforms using AWS services.
+        </div>
+        <div>
+          <strong>Agentic Voice AI Bot</strong><br>
+          Designed an agentic AI-powered voice platform to automate high-volume customer service tasks.
+        </div>
+        <div>
+          <strong>Top Rated Movies Alexa Skill</strong><br>
+          Created and published a popular Alexa skill that delivers movie recommendations.
+        </div>
       </div>
     </div>
   </section>
 
   <section id="contact">
-    <h2>Contact & Online Presence</h2>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/ramukizhakkey">LinkedIn</a></li>
-      <li><a href="https://github.com/kizhakk">GitHub</a></li>
-      <li><a href="https://twitter.com/ramukizhakkey">Twitter</a></li>
-    </ul>
+    <div class="card">
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/ramukizhakkey" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/kizhakk" target="_blank">GitHub</a></li>
+        <li><a href="https://twitter.com/ramukizhakkey" target="_blank">Twitter</a></li>
+        <li><a href="https://patents.justia.com/inventor/ramu-kizhakkey" target="_blank">My Patents</a></li>
+      </ul>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 Ramu Kizhakkey • Built with HTML & JS
+    &copy; 2025 Ramu Kizhakkey — Built with ❤️ in HTML & CSS
   </footer>
-
-  <script>
-    // Smooth scrolling behavior
-    document.querySelectorAll('nav a').forEach(a => {
-      a.addEventListener('click', e => {
-        e.preventDefault();
-        document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
 
 </body>
 </html>
